@@ -25,7 +25,7 @@ def output_word2(fichier, word):
 			output_decoration(fichier, word+str(i)+str(j))
 	return
 
-with open('../../data/Prenoms.csv', 'rb') as fichier_input, open('./prenoms05.txt', 'w') as fichier_output:
+with open('./Prenoms.csv', 'rb') as fichier_input, open('./prenoms05.txt', 'w') as fichier_output:
 	reader = csv.reader(fichier_input, delimiter=';')
 	noline = 0
 	for row in reader:
